@@ -4,6 +4,10 @@ Funkcja Usuwanie usuwa co trzeci element w podanej liście do momentu gdy jej d�
 
 lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
 print(f"Lista na starcie wygląda tak: {lst}.")
+
+def StanListy():
+    print(f"Lista teraz wygląda tak: {lst}.")
+
 def Usuwanie(lst):
     while len(lst) > 0:
         if len(lst) > 2:
@@ -12,11 +16,11 @@ def Usuwanie(lst):
             for elem in co_druga:
                 if elem in lst:
                     lst.remove(elem)
-            print(f"Lista teraz wygląda tak: {lst}.")
+            StanListy()
         elif len(lst) == 2:
             print(f"Z listy usunięto liczbę {lst[1]}.")
             lst.remove(lst[1])
-            print(f"Lista teraz wygląda tak: {lst}.")
+            StanListy()
         else:
             print(f"Z listy usunięto liczbę {lst[0]}.")
             lst.remove(lst[0])
