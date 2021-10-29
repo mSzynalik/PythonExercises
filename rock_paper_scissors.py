@@ -17,6 +17,7 @@ def welcome():
     print(f"Hello Player! It's time to play!\nToday you will be facing computer in rock-paper-scissors game.\n"
           f"Please, follow given instructions and remember that computer's moves are chosen by pseudorandom numbers.\n"
           f"Please remember also that the game ends when you or computer will reach third point.\n"
+          f"little test"
           f"Just to remind you - rock beats scissors, paper beats rock and scissors beats paper!")
 
 
